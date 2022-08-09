@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=PT+Sans+Caption&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border-spacing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body{
+    background-color: black;
+}
+
+.tit{
+    margin-top: 60px;
+    margin-bottom: 0px;
+    width: 100%;
+    color: azure;
+    font-size: 90px;
+    text-align: center;
+}
+
+.board{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameBoard{
+    border-color:azure;
+    border-width: 10px;
+    border-style: solid;
+    width: 550px;
+    height: 550px;
+    display: grid;
+    background-color: lightgray;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.snake {
+    background-color: darkcyan;
+    border: 0.23vmin;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+.apple {
+    background-color: red;
+    border: 0.1vmin;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+}
+
+.snakeScore {
+    font-size: 25px;
+    color: black;
+    font-family: inherit;
+    justify-content: center;
+    align-items: center;
+    float: center;
+}

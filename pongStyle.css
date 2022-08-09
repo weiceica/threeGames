@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=PT+Sans+Caption&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border-spacing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body{
+    background-color: black;
+}
+
+.tit{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    color: azure;
+    font-size: 90px;
+    text-align: center;
+}
+
+.space{
+    height:700px;
+    border-color:azure;
+    border-width: 6px;
+    border-style: solid;
+    width: 1700px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.tit{
+    margin-top: 60px;
+    margin-bottom: 0px;
+    width: 100%;
+    color: azure;
+    font-size: 90px;
+    text-align: center;
+}
+
+#boardID {
+    border-width: 10px;
+    border-color: azure;
+    border-style: solid;
+    justify-content: center;
+    display: flex;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.5%;
+}

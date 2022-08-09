@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=PT+Sans+Caption&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border-spacing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.tit{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+    color: azure;
+    font-size: 90px;
+    text-align: center;
+    flex: auto;
+}
+
+.board{
+    height: 700px;
+    width: 1500px;
+    border-width: 10px;
+    border-color: azure;
+    border-style: solid;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.title{
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 50px;
+    flex-direction: column;
+}
+
+.subTitle{
+    margin-top: .3rem;
+    color: azure;
+    font-size: 30px;
+}
+
+.hide{
+    display: none;
+}
+
+.bird {
+    background-color: red;
+    position: absolute;
+    --birdSize: 55px;
+    width: var(--birdSize);
+    height: var(--birdSize);
+    left: auto;
+    top: calc(var(--birdTop) * 1px);
+    border-radius: 50%;
+}
+
+.pole{
+    --holeTop: 300;
+    --poleWidth: 80;
+    --poleLeft: 90;
+    --holeHeight: 200;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(var(--poleWidth) * 1px);
+    left: calc(var(--poleLeft) * 1px);
+
+}
+
+.pole > .segment{
+    position: absolute;
+    width: 100%;
+    background-color: antiquewhite;    
+    border-color: azure;
+    border-width: 5px;
+    border-style: solid;  
+}
+
+.pole > .poleTop {
+    top: 0;
+    bottom: calc(var(--holeTop) * 1px);
+    border-top: 0px;
+}
+
+.pole > .poleBottom {
+    bottom: 0;
+    top: calc(74vh - (var(--holeTop) * 1px) + calc(var(--holeHeight) * 1px));
+    border-bottom: 0px;
+}
